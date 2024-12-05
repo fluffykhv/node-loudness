@@ -5,6 +5,9 @@ switch (os.type()) {
   case 'Darwin':
     impl = require('./impl/darwin')
     break
+  case 'FreeBSD':
+    impl = require('./impl/linux')
+    break
   case 'Linux':
     impl = require('./impl/linux')
     break
